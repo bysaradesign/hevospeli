@@ -17,11 +17,6 @@ function preload() {
     this.textures.generate('stable', { data: ['#994d1a'], pixelWidth: 450, pixelHeight: 200 });
     this.textures.generate('player', { data: ['#f9a', '#fff'], pixelWidth: 64, pixelHeight: 64 });
     this.textures.generate('horse', { data: ['#a52a2a', '#fff'], pixelWidth: 64, pixelHeight: 64 });
-
-    // Paikkamerkkiäänet (hiljaiset bufferit)
-    this.cache.audio.add('brush', []);
-    this.cache.audio.add('eat', []);
-    this.cache.audio.add('env', []);
 }
 
 function create() {
@@ -57,10 +52,6 @@ function create() {
     // Näytä tehtävä
     this.taskText = this.add.text(20, 20, getTaskText(), { fontSize: '20px', fill: '#fff' });
 
-    // "Äänet"
-    this.sound.add('brush');
-    this.sound.add('eat');
-    this.sound.add('env').play();
 
     // Klikkaa hevosta
     this.input.on('pointerdown', pointer => {

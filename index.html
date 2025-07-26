@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hevos Online Peli</title>
+    <style>
+        body { margin: 0; background: #222; }
+        #game-container { margin: 0 auto; display: block; width: 1024px; height: 768px; }
+        #horse-menu {
+            position: absolute;
+            left: 30px;
+            top: 600px;
+            background: #fff8;
+            border: 1px solid #333;
+            padding: 12px;
+            z-index: 100;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
